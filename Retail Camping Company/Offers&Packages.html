@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Offers & Packages</title>
+    <link rel="icon" type="image" href="icon/camp.ico">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Adventure HQ</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+                <li><a href="Furniture.html">Furniture</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Basket.html">Basket</a></li>
+                <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+            </ul>
+            <a href="#" class="action_btn">Register now</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CampingEquipment.html">Camping Equipment</a></li>
+            <li><a href="Furniture.html">Furniture</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li><a href="Basket.html">Basket</a></li>
+            <li><a href="Offers&Packages.html">Offers & Packages</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+
+
+    </script>
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>About us</h3>
+        <p>
+            The company was founded by a group of outdoors enthusiasts who were passionate about sharing their love of nature with others. Over the years, the company grew and expanded, opening new campsites and becoming known for their commitment to providing exceptional camping experiences.
+        </p>
+
+
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/AdventureHQme/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/adventure_hq" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/user/AdventureHQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/adventurehq/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyRights" class="copyRights">
+        <p>&copy; 2023 <a href="https://www.instagram.com/lmra._x/" target="_blank">Lamar Alherafi</a> All Rights Reserved</p>
+    </div>
+
+</footer>
+</html>
